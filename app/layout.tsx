@@ -3,6 +3,8 @@ import './globalStyles/normalize.css'
 import './globalStyles/globals.css'
 import '@/app/globalStyles/header.css'
 import '@/app/globalStyles/menu.css'
+import '@/app/globalStyles/mobile-navbar.css'
+import '@/app/globalStyles/catalog-menu.css'
 import Layout from '@/components/layouts/Layout'
 
 export const metadata: Metadata = {
