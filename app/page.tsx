@@ -1,9 +1,5 @@
-import Image from 'next/image'
+import MainPage from '@/components/templates/MainPage/MainPage'
 
 export default function Home() {
-  return (
-    <main>
-      <p>page</p>
-    </main>
-  )
+  return <MainPage />
 }
