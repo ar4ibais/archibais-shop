@@ -8,6 +8,7 @@ import { $searchModal } from '@/context/modals'
 import { AnimatePresence, motion } from 'framer-motion'
 import SearchModal from '../modules/SearchModal'
 import { handleCloseSearchModal } from '@/lib/utils/common'
+import Footer from '../modules/Footer'
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const isMedia800 = useMediaQuery(800)
@@ -32,6 +33,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           className={`header__search-overlay ${searchModal ? 'overlay-active' : ''}`}
         ></div>
       </AnimatePresence>
+      <Footer />
     </>
   )
 }
