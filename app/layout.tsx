@@ -5,6 +5,7 @@ import '@/app/globalStyles/header.css'
 import '@/app/globalStyles/menu.css'
 import '@/app/globalStyles/mobile-navbar.css'
 import '@/app/globalStyles/catalog-menu.css'
+import '@/app/globalStyles/search-modal.css'
 import Layout from '@/components/layouts/Layout'
 
 export const metadata: Metadata = {

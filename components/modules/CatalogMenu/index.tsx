@@ -132,11 +132,6 @@ const CatalogMenu = () => {
               exit='closed'
               variants={sideVariants}
             >
-              <img
-                className='catalog-menu__bg'
-                src='/img/menu-bg-small.png'
-                alt='menu bg'
-              />
               <motion.button
                 className='btn-reset catalog-menu__close'
                 variants={itemVariants}
