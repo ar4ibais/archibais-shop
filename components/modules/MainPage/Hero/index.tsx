@@ -55,11 +55,11 @@ const Hero = () => {
           slidesPerView='auto'
           initialSlide={2}
           autoplay
-          loop
           onClick={handleSliderClick}
           modules={[EffectCoverflow]}
           grabCursor
           centeredSlides
+          loop
         >
           {slides.map((slide) => (
             <SwiperSlide className={styles.hero__slider__slide} key={slide.id}>

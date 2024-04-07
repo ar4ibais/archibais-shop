@@ -9,14 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/react-slick": "^0.23.13",
     "bootstrap": "^5.3.3",
     "effector": "^23.2.0",
     "effector-react": "^23.2.0",
+    "eslint-plugin-babel": "^5.3.1",
     "framer-motion": "^11.0.24",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-slick": "^0.30.2",
     "sass": "^1.74.1",
+    "sharp": "^0.33.3",
+    "slick-carousel": "^1.8.1",
     "swiper": "^11.1.0"
   },
   "devDependencies": {
