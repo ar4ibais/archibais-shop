@@ -6,6 +6,7 @@ import Hero from '@/components/modules/MainPage/Hero'
 import { MainPageGate } from '@/context/goods'
 import BestsellersGoods from '@/components/modules/MainPage/BestsellersGoods'
 import NewGoods from '@/components/modules/MainPage/NewGoods'
+import BrandLife from '@/components/modules/MainPage/BrandLife'
 
 const MainPage = () => {
   useGate(MainPageGate)
@@ -15,6 +16,7 @@ const MainPage = () => {
       <Categories />
       <BestsellersGoods />
       <NewGoods />
+      <BrandLife />
     </main>
   )
 }
