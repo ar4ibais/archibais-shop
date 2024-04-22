@@ -10,7 +10,7 @@ import '@/app/globalStyles/cart-popup.css'
 import '@/app/globalStyles/footer.css'
 import '@/app/globalStyles/slick.css'
 import '@/app/globalStyles/slick-theme.css'
-import Layout from '@/components/layouts/Layout'
+import PagesLayout from '@/components/layouts/PagesLayout'
 
 export const metadata: Metadata = {
   title: 'Archibais',
@@ -22,11 +22,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  return (
-    <html lang='en'>
-      <body>
-        <Layout>{children}</Layout>
-      </body>
-    </html>
-  )
+  return <PagesLayout>{children}</PagesLayout>
 }

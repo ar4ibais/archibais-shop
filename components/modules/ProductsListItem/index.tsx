@@ -8,7 +8,9 @@ import ProductSubtitle from '@/components/elements/ProductsSubtitle'
 import ProductItemActionBtn from '@/components/elements/ProductItemActionBtn'
 import ProductAvailable from '@/components/elements/ProductAvailable'
 import ProductLabel from './ProductLabel'
-import { formatPrice } from '@/lib/utils/common'
+import { addOverflowHiddenToBody, formatPrice } from '@/lib/utils/common'
+import { showQuickViewModal } from '@/context/modals'
+import { setCurrentProduct } from '@/context/goods'
 import styles from '@/styles/product-list-item/index.module.scss'
 import stylesForAd from '@/styles/ad/index.module.scss'
 
@@ -16,6 +18,12 @@ const ProductsListItem = ({ item, title }: IProductsListItem) => {
   const { lang, translations } = useLang()
   const isMedia800 = useMediaQuery(800)
   const isTitleForNew = title === translations[lang].main_page.new_title
+
+  const handleShowQuickViewModal = () => {
+    addOverflowHiddenToBody()
+    showQuickViewModal()
+    setCurrentProduct(item)
+  }
   return (
     <>
       {item.characteristics.collection === 'line' &&
@@ -82,6 +90,7 @@ const ProductsListItem = ({ item, title }: IProductsListItem) => {
               <ProductItemActionBtn
                 text={translations[lang].product.quick_view}
                 iconClass='actions__btn_quick_view'
+                callback={handleShowQuickViewModal}
               />
             )}
           </div>
